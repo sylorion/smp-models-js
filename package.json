@@ -1,0 +1,58 @@
+{
+  "name": "smp-models-ts",
+  "version": "0.1.0",
+  "description": "SMP Models expressed using Javascript programming language",
+  "main": "src/index.mjs",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.mts,.mjs .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && echo \"Enable to serve, this is a lib\" && exit 1",
+    "start": "npm run build && echo \"Enable to start, this is a lib\"",
+    "deploy": "git push origin .",
+    "logs": "echo \"Nothing to log, this a library\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/sylorion/smp-models-js.git"
+  },
+  "keywords": [
+    "smp",
+    "servicesceo",
+    "services",
+    "business",
+    "b2b",
+    "b2c"
+  ],
+  "author": "Services SAS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylorion/smp-models-js/issues"
+  },
+  "homepage": "https://github.com/sylorion/smp-models-js#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "eslint-config-google": "^0.14.0",
+    "firebase": "^10.8.0",
+    "firebase-admin": "^12.0.0",
+    "graphql-subscriptions": "^2.0.0",
+    "slugify": "^1.6.6",
+    "uuid": "^9.0.1"
+  }
+}

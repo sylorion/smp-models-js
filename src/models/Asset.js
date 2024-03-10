@@ -1,0 +1,42 @@
+import {ObjectStatus, IUser} from "../index.mjs";
+
+export interface IAsset {
+  id: string,
+  uniqRef: string,
+  slug: string,
+  title: string,
+  authorID: string,
+  author?: IUser,
+  organizationID: string,
+  mediaID: string,
+  description: string,
+  price: number,
+  legalVatPercent: number,
+  quantity: number,
+  stockQuantity: number,
+  maxPerReservation: number,
+  conflictingAssets: string,
+  applyableAssets: string,
+  state: ObjectStatus,
+  createdAt: Date,
+  updatedAt?: Date,
+  deletedAt?: Date,
+}
+
+export type AssetInput = {
+  assetID: string,
+  authorID?: string,
+  mediaID?: string,
+  title?: string,
+  description?: string,
+  organizationID?: string,
+  paymentConfigID?: string,
+  price?: number,
+  stockQuantity?: number,
+  quantity?: number,
+  legalVatPercent?: number,
+  maxPerReservation?: number,
+  conflictingAssets?: JSON,
+  applyableAssets?: JSON,
+  state?: ObjectStatus,
+}
